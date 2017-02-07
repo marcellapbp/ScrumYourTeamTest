@@ -14,6 +14,6 @@
     <body>
         <h1>User</h1>
         <h2>Add</h2>
-        <a href="User/UserAdd.jsp">User Add</a>
+        <a href="Pages/UserAdd.jsp">User Add</a>
     </body>
 </html>
