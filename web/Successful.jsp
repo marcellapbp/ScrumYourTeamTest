@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 06/02/2017, 17:27:26
+    Document   : Successful
+    Created on : 07/02/2017, 17:26:45
     Author     : marcella.pereira.a1
 --%>
 
@@ -9,11 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home Page</title>
+        <title>Done</title>
     </head>
     <body>
-        <h1>User</h1>
-        <h2>Add</h2>
-        <a href="User/UserAdd.jsp">User Add</a>
+        <h1>Done!</h1>
     </body>
 </html>

@@ -2,6 +2,7 @@ package br.com.scrumyourteam.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,15 +22,16 @@ public class SystemServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        super.service(request, response);
         
        
         String actionRequested = request.getParameter("request");
         
-        if (actionRequested.equals("addUser")) 
+        if (actionRequested.equals("UserAdd")) 
         {
             UserAdd userAdd = new UserAdd();
             userAdd.execute(request, response);
+            RequestDispatcher rd = request.getRequestDispatcher("/Successful.jsp");
+            rd.forward(request,response);
         }
     }
 

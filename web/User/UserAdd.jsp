@@ -12,11 +12,12 @@
         <title>User - Add</title>
     </head>
     <body>
-        <form action="System/?request=addUser" method="POST">
+        <form action="/ScrumYourTeam/System?request=UserAdd" method="POST">
             Name: <br/><input type="text" name="nameUser"><br/>
             Login: <br/><input type="text" name="login"><br/>
             Password: <br/><input type="password" name="password"><br/>
             <br/><input type="submit" value="Save">
+
         </form>
     </body>
 </html>

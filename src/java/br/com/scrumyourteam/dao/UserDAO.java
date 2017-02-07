@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -31,7 +29,7 @@ public class UserDAO
     {
         try {
             String sql = "insert into User (idUser ,nameUser ,login ,password)"
-                    + "values (?      ,?        ,?     ,?       );";
+                               + "values (?      ,?        ,?     ,?       );";
             
             PreparedStatement psmt = conn.prepareStatement(sql);
             psmt.setInt(1, user.getIdUser());
